@@ -11,13 +11,16 @@ const HomeScreen = () => {
     <>
       <Navbar />
       <div className="grid h-screen place-items-center">
-        <h1 className="md:text-4xl text-2xl font-bold">
-          {userData
-            ? `Welcome back ${
-                userData.userInfo?.username || userData.userInfo.user?.username
-              } ✋`
-            : `Welcome Homepage ✋`}
-        </h1>
+        <div className="container mx-auto">
+          <h1 className="md:text-4xl text-2xl font-bold text-center">
+            {userData
+              ? `Welcome back ${
+                  userData.userInfo?.username ||
+                  userData.userInfo.user?.username
+                } ✋`
+              : `Welcome Homepage ✋`}
+          </h1>
+        </div>
       </div>
     </>
   );
