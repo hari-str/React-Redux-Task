@@ -5,8 +5,10 @@ import Navbar from "../components/Navbar";
 import PostComp from "../components/PostComp";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
+import { TabTitle } from "../utils/FunctionTitle";
 
 const PostScreen = () => {
+  TabTitle("Home | Post");
   const dispatch = useDispatch();
   const postData = useSelector((state) => state.posts);
   const { loading, error, post } = postData;

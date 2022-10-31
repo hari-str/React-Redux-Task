@@ -5,8 +5,10 @@ import Navbar from "../components/Navbar";
 import PhotoComp from "../components/PhotoComp";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
+import { TabTitle } from "../utils/FunctionTitle";
 
 const PhotoScreen = () => {
+  TabTitle("Home | Photos");
   const dispatch = useDispatch();
   const photosData = useSelector((state) => state.photos);
   const { loading, error, photos } = photosData;
