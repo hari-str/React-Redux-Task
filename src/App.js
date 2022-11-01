@@ -5,6 +5,7 @@ import PostScreen from "./Pages/PostScreen";
 import PhotoScreen from "./Pages/PhotoScreen";
 import LoginScreen from "./Pages/LoginScreen";
 import PrivateRouter from "./PrivateRouter";
+import ErrorScreen from "./Pages/ErrorScreen";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route element={<PrivateRouter />}>
             <Route path="/photos" element={<PhotoScreen />}></Route>
           </Route>
+          <Route path="*" element={<ErrorScreen />}></Route>
         </Fragment>
       </Routes>
     </>
