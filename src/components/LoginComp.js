@@ -42,7 +42,7 @@ const LoginComp = () => {
   }
 
   return (
-    <div className="bg-gray-50 shadow-lg border border-slate-200 rounded max-w-sm p-4">
+    <div className="bg-white shadow-lg border border-slate-200 rounded max-w-sm p-4">
       <h1 className="lg:text-4xl md:text-2xl text-2xl font-semibold mb-5">
         Login
       </h1>

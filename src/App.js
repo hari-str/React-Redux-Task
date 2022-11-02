@@ -9,23 +9,21 @@ import ErrorScreen from "./Pages/ErrorScreen";
 
 const App = () => {
   return (
-    <>
-      <Routes>
-        <Fragment>
-          <Route path="/login" element={<LoginScreen />}></Route>
-          <Route element={<PrivateRouter />}>
-            <Route exact path="/" element={<HomeScreen />} />
-          </Route>
-          <Route element={<PrivateRouter />}>
-            <Route path="/post" element={<PostScreen />}></Route>
-          </Route>
-          <Route element={<PrivateRouter />}>
-            <Route path="/photos" element={<PhotoScreen />}></Route>
-          </Route>
-          <Route path="*" element={<ErrorScreen />}></Route>
-        </Fragment>
-      </Routes>
-    </>
+    <Routes>
+      <Fragment>
+        <Route path="/login" element={<LoginScreen />}></Route>
+        <Route element={<PrivateRouter />}>
+          <Route exact path="/" element={<HomeScreen />} />
+        </Route>
+        <Route element={<PrivateRouter />}>
+          <Route path="/post" element={<PostScreen />}></Route>
+        </Route>
+        <Route element={<PrivateRouter />}>
+          <Route path="/photos" element={<PhotoScreen />}></Route>
+        </Route>
+        <Route path="*" element={<ErrorScreen />}></Route>
+      </Fragment>
+    </Routes>
   );
 };
 
