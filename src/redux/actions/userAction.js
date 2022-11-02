@@ -3,7 +3,7 @@ export const login = (user) => async (dispatch) => {
   try {
     dispatch({ type: "USER_LOGIN", payload: { user } });
     localStorage.setItem("userInfo", JSON.stringify(user));
-    console.log(user);
+    // console.log(user);
   } catch (error) {
     console.log(error);
   }

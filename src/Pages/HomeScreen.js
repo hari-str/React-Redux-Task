@@ -6,7 +6,7 @@ import { TabTitle } from "../utils/FunctionTitle";
 const HomeScreen = () => {
   TabTitle("Home");
   const userData = useSelector((state) => state.userLogin);
-  console.log(userData);
+  // console.log(userData);
   return (
     <>
       <Navbar />
