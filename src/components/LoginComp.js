@@ -34,6 +34,7 @@ const LoginComp = () => {
           loggedIn: true,
         })
       );
+      alert("Login successfull");
     }
     console.log(errors);
 
