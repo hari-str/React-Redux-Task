@@ -42,15 +42,15 @@ const LoginComp = () => {
   }
 
   return (
-    <div className="bg-white shadow-lg border border-slate-200 rounded max-w-sm p-4">
-      <h1 className="lg:text-4xl md:text-2xl text-2xl font-semibold mb-5">
+    <div className="bg-white shadow-lg border border-slate-200 rounded max-w-sm lg:pb-4 lg:pb-4 p-4 pb-8">
+      <h1 className="lg:text-4xl text-3xl font-bold mb-5 text-center ">
         Login
       </h1>
 
-      <form className="" onSubmit={(e) => handleSubmit(e)}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <input
           type="text"
-          className="w-full p-1.5 mb-2 border border-slate-400 text-base rounded"
+          className="w-full lg:p-1.5 p-2 mb-2 border border-slate-400 text-base rounded"
           placeholder="Username"
           value={username}
           onChange={(e) => setUserName(e.target.value)}
@@ -61,7 +61,7 @@ const LoginComp = () => {
         )}
         <input
           type="password"
-          className="w-full p-1.5  mb-2 border border-slate-400 text-base rounded"
+          className="w-full lg:p-1.5 p-2  mb-2 border border-slate-400 text-base rounded"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}

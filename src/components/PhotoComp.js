@@ -7,7 +7,7 @@ const PhotoComp = ({ photos, index }) => {
         src={photos?.url}
         alt="photograph"
         key={index}
-        className="transition delay-75  hover:scale-105"
+        className="hover:scale-105"
       />
     </div>
   );
